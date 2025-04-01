@@ -1,7 +1,19 @@
 {
   "version": 2,
+  "builds": [
+    { "src": "next.config.js", "use": "@vercel/next" }
+  ],
   "routes": [
-    { "src": "/vvc-logo-final.png", "dest": "/vvc-logo-final.png" },
-    { "src": "/(.*)", "dest": "/" }
+    {
+      "src": "/vvc-logo-final.png",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/vvc-logo-final.png"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
   ]
 }
