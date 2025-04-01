@@ -23,7 +23,7 @@ export default function Home() {
       alignItems: 'center'
     }}>
       <img
-  src="/vvc%20og%20white.png"
+  src="/vvc-logo.png"
   alt="Valley Veterano Logo"
   style={{ maxWidth: '300px', marginBottom: '1rem' }}
 />
