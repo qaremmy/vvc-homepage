@@ -5,9 +5,9 @@ export default function Home() {
   const [error, setError] = useState('');
 
   const handleVerify = () => {
-    if (code.trim().toUpperCase() === 'VX9D-Z4P7') {
-      window.location.href = '/mission/flood-25-08';
-    } else {
+if (code.trim().toUpperCase() === 'VX9D-Z4P7') {
+  window.location.href = '/archive/flood25';
+} else {
       setError('Invalid clearance code. Try again.');
     }
   };
