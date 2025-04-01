@@ -26,7 +26,7 @@ export default function Home() {
   src="/vvc-logo.png"
   alt="Valley Veterano Logo"
   style={{ maxWidth: '300px', marginBottom: '1rem' }}
-/>
+/> // testing logo display
 <p style={{ marginBottom: '2rem', letterSpacing: '0.15em', fontSize: '0.85rem' }}>
   EARNED, NOT ISSUED.
 </p>
