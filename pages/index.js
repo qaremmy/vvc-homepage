@@ -22,8 +22,14 @@ export default function Home() {
       justifyContent: 'center',
       alignItems: 'center'
     }}>
-      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Valley Veterano</h1>
-      <p style={{ marginBottom: '2rem', letterSpacing: '0.1em' }}>EARNED, NOT ISSUED.</p>
+      <img
+  src="/vvc%20og%20white.png"
+  alt="Valley Veterano Logo"
+  style={{ maxWidth: '300px', marginBottom: '1rem' }}
+/>
+<p style={{ marginBottom: '2rem', letterSpacing: '0.15em', fontSize: '0.85rem' }}>
+  EARNED, NOT ISSUED.
+</p>
       <input
         type="text"
         placeholder="Enter Clearance Code"
