@@ -36,7 +36,7 @@ export default function Home() {
         value={code}
         onChange={(e) => setCode(e.target.value)}
         style={{ padding: '10px', borderRadius: '5px', border: 'none', marginBottom: '1rem', width: '250px', color: 'black' }}
-      />
+      /> 
       <button
         onClick={handleVerify}
         style={{
