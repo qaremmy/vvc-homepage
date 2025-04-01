@@ -6,6 +6,7 @@ export default function Home() {
 
   const handleVerify = () => {
     const trimmedCode = code.trim().toUpperCase();
+
     if (trimmedCode === 'VX9D-Z4P7') {
       window.location.href = '/archive/flood25';
     } else {
