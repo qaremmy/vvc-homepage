@@ -8,7 +8,7 @@ export default function Home() {
     const trimmedCode = code.trim().toUpperCase();
 
     if (trimmedCode === 'VX9D-Z4P7') {
-      window.location.href = '/archive/flood25';
+      window.location.href = '/mission/flood-25-08'; // This works for now
     } else {
       setError('Invalid clearance code. Try again.');
     }
