@@ -5,12 +5,14 @@ export default function Home() {
   const [error, setError] = useState('');
 
   const handleVerify = () => {
-if (code.trim().toUpperCase() === 'VX9D-Z4P7') {
-  window.location.href = '/archive/flood25';
-} else {
-      setError('Invalid clearance code. Try again.');
-    }
-  };
+  const trimmedCode = code.trim().toUpperCase();
+
+  if (trimmedCode === 'VX9D-Z4P7') {
+    window.location.href = '/archive/flood25';
+  } else {
+    setError('Invalid clearance code. Try again.');
+  }
+};
 
   return (
     <div style={{
