@@ -5,14 +5,13 @@ export default function Home() {
   const [error, setError] = useState('');
 
   const handleVerify = () => {
-  const trimmedCode = code.trim().toUpperCase();
-
-  if (trimmedCode === 'VX9D-Z4P7') {
-    window.location.href = '/archive/flood25';
-  } else {
-    setError('Invalid clearance code. Try again.');
-  }
-};
+    const trimmedCode = code.trim().toUpperCase();
+    if (trimmedCode === 'VX9D-Z4P7') {
+      window.location.href = '/archive/flood25';
+    } else {
+      setError('Invalid clearance code. Try again.');
+    }
+  };
 
   return (
     <div style={{
@@ -25,20 +24,27 @@ export default function Home() {
       alignItems: 'center'
     }}>
       <img
-  src="/vvc-logo-final.png"
-  alt="Valley Veterano Logo"
-  style={{ maxWidth: '300px', marginBottom: '1rem' }}
-/> 
-<p style={{ marginBottom: '2rem', letterSpacing: '0.15em', fontSize: '0.85rem' }}>
-  EARNED, NOT ISSUED.
-</p>
+        src="/vvc-logo-final.png"
+        alt="Valley Veterano Logo"
+        style={{ maxWidth: '300px', marginBottom: '1rem' }}
+      />
+      <p style={{ marginBottom: '2rem', letterSpacing: '0.15em', fontSize: '0.85rem' }}>
+        EARNED, NOT ISSUED.
+      </p>
       <input
         type="text"
         placeholder="Enter Clearance Code"
         value={code}
         onChange={(e) => setCode(e.target.value)}
-        style={{ padding: '10px', borderRadius: '5px', border: 'none', marginBottom: '1rem', width: '250px', color: 'black' }}
-      /> 
+        style={{
+          padding: '10px',
+          borderRadius: '5px',
+          border: 'none',
+          marginBottom: '1rem',
+          width: '250px',
+          color: 'black'
+        }}
+      />
       <button
         onClick={handleVerify}
         style={{
@@ -56,4 +62,3 @@ export default function Home() {
     </div>
   );
 }
-
